@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<script language="javascript" src="validation.js"></script>
+	<title>Artistas DawgRecord | Administrador</title>
+	<style type="text/css">
+		#Caja
+		{
+
+           background: #f0f0f0;
+           width: 250px;
+           border: 1px solid white;
+           padding: 30px;
+           margin: 200px auto;
+           border-radius: 6px;  
+           max-width: 500px;
+		}
+		body
+		{
+			background-image: url("img/newheader.jpg");
+
+		}
+		h1
+		{
+			font-family: arial;
+			color: #000000;
+		}
+		input[type=text],input[type=password]
+		{
+			display: block;
+			border-radius: 3px;
+			padding: 5px 0;
+			width: 100%;
+		}
+		input[type=submit]
+		{
+	         background: linear-gradient(#acacac, #fceecf);
+	         border: 0;
+	         width: 100%;
+	         color: black;
+	         opacity: 0.8;
+	         cursor: pointer;
+	         border-radius: 20px;
+	         margin-bottom: 0;
+		}
+        input[type=submit]:hover{
+
+        opacity: 1;
+
+        }
+        input[type=submit]:active{
+
+         transform: scale(0.95);
+        }    
+		
+		
+
+	</style>
+</head>
+<body>
+	
+	<div id ="Caja">
+		<h1>Ingresar</h1>
+		<form action="Login.html" method="post" onsubmit="return validacion();" >
+		      <input type="text" name="Usuario"
+		      placeholder="Usuario" required id="Usuario">	
+		      <input type="password" name="password"
+		      placeholder="Password" required id="password"> 
+		
+			
+			<input type="submit" name="_Boton" value="Confirmar" required="password" >	
+		</form>
+		
+	</div>
+
+</body>
+</html>
